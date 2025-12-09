@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Animated Gradient Background */
+.gradient-bg {
+    background: linear-gradient(-45deg, #0891b2, #2563eb, #164e63, #1e40af);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Floating Particles */
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(6, 182, 212, 0.2);
+    animation: float 20s infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100vh) translateX(50px); opacity: 0; }
+}
+
+.particle:nth-child(1) { width: 80px; height: 80px; left: 10%; animation-delay: 0s; }
+.particle:nth-child(2) { width: 60px; height: 60px; left: 20%; animation-delay: 2s; }
+.particle:nth-child(3) { width: 100px; height: 100px; left: 40%; animation-delay: 4s; }
+.particle:nth-child(4) { width: 70px; height: 70px; left: 60%; animation-delay: 6s; }
+.particle:nth-child(5) { width: 90px; height: 90px; left: 80%; animation-delay: 8s; }
+
+/* Glow Effect */
+.glow {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.5),
+                0 0 40px rgba(37, 99, 235, 0.3),
+                0 0 60px rgba(6, 182, 212, 0.2);
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0891b2, #2563eb);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #06b6d4, #3b82f6);
+}
+
+/* Hamburger Menu Animation */
+.hamburger span {
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Rating Stars */
+.star-rating {
+    color: #fbbf24;
+}
+
+/* Dark Theme Enhancements */
+body {
+    background-color: #030712;
+}
+
+/* Backdrop Blur Effects */
+.backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+}
+
+/* Custom Border Glow on Hover */
+.hover-border-glow {
+    position: relative;
+}
+
+.hover-border-glow::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #06b6d4, #3b82f6, #06b6d4);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.hover-border-glow:hover::before {
+    opacity: 1;
+}
+
+/* Testimonial Slider Animation */
+.testimonial-slider {
+  display: flex;
+  width: max-content;
+  animation: slide-testimonials 40s linear infinite;
+}
+
+.testimonial-slider:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide-testimonials {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 2rem)); /* -50% karena duplikasi + gap */
+  }
+}
