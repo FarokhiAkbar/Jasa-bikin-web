@@ -11,50 +11,46 @@
 <body class="bg-gray-950">
 
     <!-- Navigation -->
-    <nav class="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur-lg border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-code text-white text-xl"></i>
-                        </div>
-                        <span class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">BikininWeb</span>
+    <nav class="fixed w-full top-0 z-50 bg-gradient-to-b from-gray-900/95 to-gray-900/50 backdrop-blur-lg border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-code text-white text-xl"></i>
                     </div>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">BikininWeb</span>
                 </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-300 hover:text-cyan-400 font-medium transition">Beranda</a>
-                    <a href="#features" class="text-gray-300 hover:text-cyan-400 font-medium transition">Fitur</a>
-                    <a href="#pricing" class="text-gray-300 hover:text-cyan-400 font-medium transition">Harga</a>
-                    <a href="#portfolio" class="text-gray-300 hover:text-cyan-400 font-medium transition">Portfolio</a>
-                    <a href="#faq" class="text-gray-300 hover:text-cyan-400 font-medium transition">FAQ</a>
-                    <a href="#contact" class="text-gray-300 hover:text-cyan-400 font-medium transition">Kontak</a>
-                </div>
-
-
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden hamburger flex flex-col space-y-1" id="mobile-menu-btn">
-                    <span class="block w-6 h-0.5 bg-gray-300"></span>
-                    <span class="block w-6 h-0.5 bg-gray-300"></span>
-                    <span class="block w-6 h-0.5 bg-gray-300"></span>
-                </button>
             </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800">
-            <div class="px-4 py-4 space-y-3">
-                <a href="#home" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Beranda</a>
-                <a href="#features" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Fitur</a>
-                <a href="#pricing" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Harga</a>
-                <a href="#portfolio" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Portfolio</a>
-                <a href="#faq" class="block text-gray-300 hover:text-cyan-400 font-medium transition">FAQ</a>
-                <a href="#contact" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Kontak</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-cyan-400 font-medium transition">Beranda</a>
+                <a href="#features" class="text-gray-300 hover:text-cyan-400 font-medium transition">Fitur</a>
+                <a href="#pricing" class="text-gray-300 hover:text-cyan-400 font-medium transition">Harga</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-cyan-400 font-medium transition">Portfolio</a>
+                <a href="#faq" class="text-gray-300 hover:text-cyan-400 font-medium transition">FAQ</a>
+                <a href="#contact" class="text-gray-300 hover:text-cyan-400 font-medium transition">Kontak</a>
             </div>
+
+            <button class="md:hidden hamburger flex flex-col space-y-1" id="mobile-menu-btn">
+                <span class="block w-6 h-0.5 bg-gray-300"></span>
+                <span class="block w-6 h-0.5 bg-gray-300"></span>
+                <span class="block w-6 h-0.5 bg-gray-300"></span>
+            </button>
         </div>
-    </nav>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800">
+        <div class="px-4 py-4 space-y-3">
+            <a href="#home" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Beranda</a>
+            <a href="#features" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Fitur</a>
+            <a href="#pricing" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Harga</a>
+            <a href="#portfolio" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Portfolio</a>
+            <a href="#faq" class="block text-gray-300 hover:text-cyan-400 font-medium transition">FAQ</a>
+            <a href="#contact" class="block text-gray-300 hover:text-cyan-400 font-medium transition">Kontak</a>
+        </div>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg pt-16">
@@ -75,7 +71,7 @@
                         Jasa pembuatan website profesional dengan desain modern, responsif, dan menarik. Tingkatkan bisnis Anda dengan website berkualitas tinggi.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://wa.me/0895331889209" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 hover:scale-105 glow inline-flex items-center justify-center transition">
+                        <a href="https://wa.me/62895331889209" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 hover:scale-105 glow inline-flex items-center justify-center transition">
                             <i class="fab fa-whatsapp mr-3 text-2xl"></i>
                             Konsultasi Gratis
                         </a>
@@ -101,11 +97,10 @@
                 <div class="hidden md:block fade-in">
                     <div class="relative">
                         <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur-3xl opacity-30"></div>
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%231a1a2e'/%3E%3Crect x='50' y='80' width='700' height='440' rx='20' fill='%230f1419'/%3E%3Crect x='50' y='80' width='700' height='60' rx='20' fill='%230891b2'/%3E%3Ccircle cx='90' cy='110' r='8' fill='%2306b6d4'/%3E%3Ccircle cx='115' cy='110' r='8' fill='%2306b6d4'/%3E%3Ccircle cx='140' cy='110' r='8' fill='%2306b6d4'/%3E%3Crect x='80' y='170' width='250' height='120' rx='10' fill='%23164e63'/%3E%3Crect x='80' y='310' width='640' height='80' rx='10' fill='%23164e63'/%3E%3Crect x='80' y='410' width='200' height='80' rx='10' fill='%230891b2'/%3E%3Crect x='300' y='410' width='200' height='80' rx='10' fill='%232563eb'/%3E%3Crect x='520' y='410' width='200' height='80' rx='10' fill='%2306b6d4'/%3E%3Crect x='360' y='170' width='360' height='120' rx='10' fill='%232563eb'/%3E%3C/svg%3E" alt="Website Mockup" class="relative rounded-3xl shadow-2xl shadow-cyan-500/20">
+                        
+                        <img src="https://iw.cdn.my.id/images/jasa-pembuatan-website2.png" alt="Website Mockup" class="relative rounded-3xl shadow-2xl shadow-cyan-500/20">
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
 
     <!-- Features Section -->
